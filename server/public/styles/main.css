@@ -14,7 +14,7 @@ header {
     height: 25%;
 }
 h1 {
-    font-size:2.5em;
+    font-size:2rem;
     color:#fff;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -52,7 +52,7 @@ input[type="submit"]:hover {
     cursor: pointer;
   }
 .backpaper {
-    margin: 32.5% auto;
+    margin:150px auto 0;
     height: 365px;
     width: 300px;
     box-shadow: 0 20px 1px rgba(0, 0, 0, 0.12), 0 20px 2px rgba(0, 0, 0, 0.24);
@@ -86,23 +86,25 @@ input[type="submit"]:hover {
     border-bottom: 20px solid transparent;
     border-right: 20px solid #2d5998;
 }
-.paper > header {
+.paper p {
+    font-size:7.5px;
+}
+.paper header {
     position: absolute;
     top:0;
     left:0
 }
-.paper > .header > section {
+.paper .header section {
     width:33%;
-    margin:35px 15px 0;
+    margin:15px 15px 0;
 }
-.paper > .header > section p,
-.paper > footer p {
+.paper .header section p,
+.paper footer p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .5em;
     color:#000;
     text-align:left;
 }
-.paper > .header > section > p {
+.paper .header section p {
     font-weight: bold;
     margin: 5px 0 0;
     padding: 0
@@ -114,40 +116,32 @@ input[type="submit"]:hover {
     float:right;
 }
 .text {
-    font-size:.5em;
     clear:both;
     font-family: 'Amiri', serif;
     margin: 0 15px;
-    padding-top:20px;
+    padding-top:5px;
 }
 footer {
     position: absolute;
     bottom:5%;
     left:0;
 }
-footer > p,
-footer > img {
+footer p,
+footer img {
     margin-left:15px;
 }
-footer > p {
+footer p {
     margin-top:2.5px;
     margin-bottom:2.5px;
     padding:0;
 }
-footer > img {
+footer img {
     width:50%;
     height:auto;
 }
-@media screen and (min-width:575px) {
-    header {
-        height: 35%;
-    }
-    h1 {
-        font-size:3em;
-    }
-    .backpaper {
-        margin-top: 15%;
-        height: 550px;
-        width: 450px;
+@media screen and (min-width:600px) {
+.backpaper {
+    height: 550px;
+    width: 450px;
     }
 }
