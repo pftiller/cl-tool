@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #efefef;
+    width: 100%;
+}
+
+.backpaper {
+    margin: 50px auto;
+    height: 365px;
+    width: 300px;
+    box-shadow: 0 20px 1px rgba(0, 0, 0, 0.12), 0 20px 2px rgba(0, 0, 0, 0.24);
+}
+
+.paper {
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.dog-ear:before,
+.dog-ear:after {
+    content: '';
+    display: block;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+.dog-ear:after {
+    border-top: 20px solid transparent;
+    border-left: 20px solid rgba(0, 0, 0, 0.08);
+}
+
+.dog-ear:before {
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #efefef;
+}
+
+@media screen and (min-width:575px) {
+    .backpaper {
+        height: 550px;
+        width: 450px;
+    }
+}
